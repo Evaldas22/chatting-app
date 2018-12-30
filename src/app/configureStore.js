@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
-import rootReducer from './duck/reducers';
-import { contacts } from './static-data';
+import rootReducer from './duck/reducers/rootReducer';
 
-const store = createStore(rootReducer, {contacts});
+// intial state will be initialized using reducer
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default store;

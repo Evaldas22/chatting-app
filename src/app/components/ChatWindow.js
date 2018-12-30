@@ -1,9 +1,8 @@
 import React from 'react';
-import './ChatWindow.css';
 
-const ChatWindow = (props) => {
-    return(
-        <main className="Main">Chat windows</main>
+const ChatWindow = () => {
+    return (
+        <div>Chat window</div>
     )
 }
 
