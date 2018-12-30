@@ -1,5 +1,6 @@
 .Sidebar {
-    width: 10%;
+    width: 30%;
     height: 100%;
     background-color: #2d007c;
+    overflow-y: scroll;
 }

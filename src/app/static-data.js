@@ -4,16 +4,6 @@ const faker = require("faker"); // faker is used for generating random fake data
 const _ = require("lodash"); // lodash is a utility lib for Javascript
 
 
-// just an example of how the state object is structured
-export const state = {
-    user: generateUser(),
-    messages: getMessages(10),
-    typing: '',
-    contacts,
-    activeUserId: null
-};
-
-
 // generate some users and map user_ids
 const users = generateUsers(10);
 export const contacts = _.mapKeys(users, 'user_id');
@@ -41,6 +31,17 @@ export function generateUser() {
     user_id: shortid.generate()
   };
 }
+
+// just an example of how the state object is structured
+export const state = {
+    user: generateUser(),
+    messages: getMessages(10),
+    typing: '',
+    contacts,
+    activeUserId: null
+};
+
+
 /**
  * @returns {Object} - a new message object
  */
@@ -63,3 +64,5 @@ function generateUsers(numberOfUsers) {
 function generateMsgs(numberOfMsgs) {
   return Array.from({ length: numberOfMsgs }, (v, i) => generateMsg(i));
 }
+
+
