@@ -6,3 +6,20 @@ export const setActiveUserId = (userId) =>{
         payload: userId
     }
 }
+
+export const setTypingValue = (inputValue) =>{
+    return {
+        type: types.SET_TYPING_VALUE,
+        payload: inputValue
+    }
+}
+
+export const sendMessage = (message, userId) => {
+    return {
+        type: types.SEND_MESSAGE,
+        payload: {
+            message,
+            userId
+        }
+    }
+}
