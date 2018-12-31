@@ -14,10 +14,10 @@ const User = ({user}) => {
 
     return (
         <div className='User' onClick={handleUserClick.bind(null, user)} >
-            <img src={profile_pic} className='user_picture' alt='user_profile_picture'/>
-            <div className='user-details'>
-                <p className='user-name'>{name}</p>
-                <p className='user-summary'>{summary}</p>
+            <img src={profile_pic} className='User_picture' alt='User_profile_picture'/>
+            <div className='User-details'>
+                <p className='User-name'>{name}</p>
+                <p className='User-summary'>{summary}</p>
             </div>
         </div>
     )     

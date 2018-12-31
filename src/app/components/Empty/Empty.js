@@ -7,13 +7,13 @@ const Empty = ({user}) => {
 
     return (
         <div className='Empty'>
-            <h1 className='name'>Welcome, {firstName}</h1>
-            <img src={profile_pic} alt='user_profile_picture' className='image' />
-            <p className='summary' >
+            <h1 className='Empty_name'>Welcome, {firstName}</h1>
+            <img src={profile_pic} alt='user_profile_picture' className='Empty_image' />
+            <p className='Empty_summary' >
                 <b>Summary: </b>{summary}
             </p>
-            <button className="btn">Start a conversation</button>
-            <p className="info">
+            <button className="Empty_btn">Start a conversation</button>
+            <p className="Empty_info">
                 Search for someone to start chatting with or go to Contacts to see who
                 is available
             </p>    
