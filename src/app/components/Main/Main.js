@@ -4,6 +4,7 @@ import Empty from '../Empty/Empty';
 import ChatWindow from '../ChatWindow/ChatWindow';
 
 const Main = ({user, activeUserId}) => {
+
     return(
         <main className="Main">
             {activeUserId === null ? 

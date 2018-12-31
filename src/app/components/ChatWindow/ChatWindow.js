@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ChatWindow = () => {
+const ChatWindow = ({activeUserId}) => {
     return (
-        <div>Chat window</div>
+        <div className='ChatWindow' >Conversation for user id: {activeUserId}</div>
     )
 }
 

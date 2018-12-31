@@ -6,7 +6,9 @@ const Sidebar = ({contacts}) => {
     return (
         <aside className="Sidebar">
         {
-            contacts.map(contact => <User user={contact} key={contact.user_id}/>)
+            contacts.map(contact => {
+                return <User user={contact} key={contact.user_id}/>
+            })
         }
         </aside>
     )
